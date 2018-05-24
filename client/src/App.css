@@ -429,8 +429,8 @@ a.user-name {
 
 .display-3 {
   color: #212529;
-  text-decoration: underline;
-  text-decoration-color: #dc3545;
+  border-color: #dc3545;
+  border-bottom: 3px;
 }
 
 .footerText {
