@@ -5,7 +5,7 @@ const initialState = {
   isAuthenticated: false,
   user: {}
 };
-//Once logged in the user gets sets a state of true authorization
+//Once logged in the user gets sets a state of authorization = true
 export default function(state = initialState, action) {
   switch (action.type) {
     case SET_CURRENT_USER:

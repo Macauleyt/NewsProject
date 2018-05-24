@@ -2,9 +2,10 @@ import {
   GET_PROFILE,
   PROFILE_LOADING,
   CLEAR_CURRENT_PROFILE
-} from "../actions/types";
+} from "../actions/types"; //import redux states
 
 const initialState = {
+  //set to null
   profile: null,
   profiles: null,
   loading: false

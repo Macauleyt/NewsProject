@@ -3,3 +3,4 @@ if (process.env.NODE_ENV === "production") {
 } else {
   module.exports = require("./store_dev");
 }
+//check enviroment and choose which store to use

@@ -46,7 +46,7 @@ class Register extends Component {
     e.preventDefault();
 
     const newUser = {
-      //adds values to newUser which is passed to user schema and validation
+      //adds values to newUser which is passed to user mogngo schema and validation
       name: this.state.name,
       email: this.state.email,
       password: this.state.password,

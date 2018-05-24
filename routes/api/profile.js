@@ -6,12 +6,12 @@ const passport = require("passport");
 // Load Validation
 const validateProfileInput = require("../../validation/profile");
 
-// Load Profile Model
+// Load Profile Models
 const Profile = require("../../models/Profile");
 // Load User Model
 const User = require("../../models/User");
 
-//Get current user profile
+//Get current user profiles
 router.get(
   "/",
   //authenticate with jwt and passport

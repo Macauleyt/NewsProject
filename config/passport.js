@@ -6,11 +6,12 @@ const keys = require("../config/keys");
 
 const opts = {};
 
-//use jwt to obtain authorization header as bearer
+//use jwt to obtain authorization header as bearer token
 opts.jwtFromRequest = ExtractJwt.fromAuthHeaderAsBearerToken();
 opts.secretOrKey = keys.Key;
 
 module.exports = passport => {
+  //handles auth
   passport.use(
     new JwtStrategy(opts, (jwt_payload, done) => {
       User.findById(jwt_payload.id)

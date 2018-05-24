@@ -11,13 +11,13 @@ class Select extends Component {
     // Pass props to parent class
     super(props);
     this.state = {
-      //array value for articledata
+      //array value for articlesdata
       data: [],
       value: this.props.default
     };
     this.onChange = this.onChange.bind(this);
     this.apiUrl =
-      //pass in own apikey for source list
+      //pass in own apikey for source lists
       "https://newsapi.org/v2/sources?language=en&apiKey=543e7f3fc3ba481ab3c2897d5bb28d21";
   }
   // Handle the Select Change from the Select Options

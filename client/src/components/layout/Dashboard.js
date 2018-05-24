@@ -34,7 +34,7 @@ class Dashboard extends Component {
       .then(response => {
         const data = response.data.articles; //store data from articles as data
         console.log(data);
-        this.setState({ articles: data }); //set state for use elsewhere
+        this.setState({ articles: data }); //set state for use in article render
       })
       .catch(error => {
         console.log(error);

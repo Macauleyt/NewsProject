@@ -13,10 +13,10 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-// DB Config
+// DB Configs
 const db = require("./config/keys").mongoURI;
 
-// Connect to MongoDB
+// Connect to MongoDB database
 mongoose
   .connect(db)
   .then(() => console.log("MongoDB Connected"))

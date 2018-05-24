@@ -1,6 +1,7 @@
 import React from "react";
 
 export default () => {
+  //Footer Render
   return (
     <div className="footerText">
       <div className="footer">

@@ -10,6 +10,7 @@ import PropTypes from "prop-types";
 // I want to save the article Data within the array which is part of my user database
 // I was unsure how to specify which array value I wanted stored as I think
 // they were all trying to be stored at once. Causing multiple crashed.
+// Need to implement AXIOS POST request somewhere but not sure where or how.
 
 class ArticleAdd extends Component {
   constructor(props) {

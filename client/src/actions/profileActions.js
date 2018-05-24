@@ -11,48 +11,32 @@ import {
 // Get current profile
 export const getCurrentProfile = () => dispatch => {
   dispatch(setProfileLoading());
-  axios
+  axios //get request to get profile
     .get("/api/profile")
     .then(res =>
       dispatch({
+        //storing as redux state
         type: GET_PROFILE,
         payload: res.data
       })
     )
     .catch(err =>
       dispatch({
+        //storing as redux state
         type: GET_PROFILE,
         payload: {}
       })
     );
 };
 
-// Get profile by handle
-export const getProfileByHandle = handle => dispatch => {
-  dispatch(setProfileLoading());
-  axios
-    .get(`/api/profile/handle/${handle}`)
-    .then(res =>
-      dispatch({
-        type: GET_PROFILE,
-        payload: res.data
-      })
-    )
-    .catch(err =>
-      dispatch({
-        type: GET_PROFILE,
-        payload: null
-      })
-    );
-};
-
 // Create Profile
 export const createProfile = (profileData, history) => dispatch => {
-  axios
+  axios //post reqest to profile database
     .post("/api/profile", profileData)
     .then(res => history.push("/dash2"))
     .catch(err =>
       dispatch({
+        //saving as redux state
         type: GET_ERRORS,
         payload: err.response.data
       })
@@ -62,17 +46,19 @@ export const createProfile = (profileData, history) => dispatch => {
 // Delete account & profile
 export const deleteAccount = () => dispatch => {
   if (window.confirm("Are you sure? This can NOT be undone!")) {
-    axios
+    //warning
+    axios //delete request
       .delete("/api/profile")
       .then(res =>
         dispatch({
+          //save as redux state
           type: SET_CURRENT_USER,
           payload: {}
         })
       )
       .catch(err =>
         dispatch({
-          type: GET_ERRORS,
+          type: GET_ERRORS, //save as redux state
           payload: err.response.data
         })
       );
@@ -89,6 +75,7 @@ export const setProfileLoading = () => {
 // Clear profile
 export const clearCurrentProfile = () => {
   return {
+    //clear profile state on logout
     type: CLEAR_CURRENT_PROFILE
   };
 };

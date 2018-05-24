@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const ProfileActions = () => {
+  //buttons to edit profile or view saved articles
   return (
     <div>
       <Link to="/saveArticle" className="btn btn-mac">

@@ -22,7 +22,7 @@ class CreateProfile extends Component {
   }
 
   componentDidMount() {
-    this.props.getCurrentProfile(); //gets the current user/profile
+    this.props.getCurrentProfile(); //gets the current user and profile
   }
 
   componentWillReceiveProps(nextProps) {

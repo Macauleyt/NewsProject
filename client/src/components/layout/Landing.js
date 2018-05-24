@@ -4,7 +4,7 @@ import { PropTypes } from "prop-types";
 import { connect } from "react-redux";
 
 class Landing extends Component {
-  //Redirect if already logged in to search
+  //Redirect to search page if logged in
   componentDidMount() {
     if (this.props.auth.isAuthenticated) {
       this.props.history.push("/search");

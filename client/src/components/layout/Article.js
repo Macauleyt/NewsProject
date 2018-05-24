@@ -1,7 +1,7 @@
 import React from "react";
 
 const Article = props => {
-  const { details } = props; //Setup overall article viewer look using details props to build each card
+  const { details } = props; //overall article viewer look using details props to build each card
   return (
     <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12 d-flex">
       <div className="card-deck">

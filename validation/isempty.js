@@ -1,6 +1,6 @@
 //function to check the value of certain input boxes,
 // also checks for undefined values and null values
-// for use without project
+// for use throughout project
 
 const isEmpty = value =>
   value === undefined ||

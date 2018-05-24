@@ -4,13 +4,13 @@ import { connect } from "react-redux";
 import PropTypes from "prop-types";
 
 //Sets up private routes for routes that need authenticating. Checks isAuthenticated value
-//Redirets if not authed
+//Redirets if not authorised
 
 const PrivateRoute = ({ component: Component, auth, ...rest }) => (
   <Route
     {...rest}
     render={props =>
-      auth.isAuthenticated === true ? (
+      auth.isAuthenticated === true ? ( //if user is not logged in redirect to login page
         <Component {...props} />
       ) : (
         <Redirect to="/login" />
@@ -20,7 +20,7 @@ const PrivateRoute = ({ component: Component, auth, ...rest }) => (
 );
 
 PrivateRoute.propTypes = {
-  auth: PropTypes.object.isRequired
+  auth: PropTypes.object.isRequired //authenticate is required
 };
 
 const mapStateToProps = state => ({

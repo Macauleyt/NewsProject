@@ -8,10 +8,10 @@ const passport = require("passport"); //passport for validation
 //load input validation for login and register
 const validateRegisterInput = require("../../validation/register");
 const validateLoginInput = require("../../validation/login");
-// Load User model
+// Load User models
 const User = require("../../models/User");
 
-// Register users into database
+// Register users into databases
 router.post("/register", (req, res) => {
   const { errors, isValid } = validateRegisterInput(req.body);
   //check validation

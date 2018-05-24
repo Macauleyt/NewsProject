@@ -1,6 +1,8 @@
 const Validator = require("validator");
 const isEmpty = require("./isempty");
 module.exports = function validateProfileInput(data) {
+  //use validator to check profile input data
+
   let errors = {};
 
   data.handle = !isEmpty(data.handle) ? data.handle : "";

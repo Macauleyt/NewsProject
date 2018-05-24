@@ -8,7 +8,7 @@ import ProfileActions from "./ProfileActions";
 
 class dash2 extends Component {
   componentDidMount() {
-    this.props.getCurrentProfile();
+    this.props.getCurrentProfile(); //gets profile of logged in user and checks to see if profile exists
   }
 
   onDeleteClick(e) {
@@ -17,7 +17,7 @@ class dash2 extends Component {
 
   render() {
     const { user } = this.props.auth;
-    const { profile, loading } = this.props.profile;
+    const { profile, loading } = this.props.profile; //stores profile data
 
     let content;
 

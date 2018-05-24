@@ -45,6 +45,7 @@ class CreateProfile extends Component {
   }
 
   render() {
+    //Profile creation render
     const { errors } = this.state;
 
     return (

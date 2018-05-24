@@ -8,6 +8,7 @@ class Login extends Component {
   constructor() {
     super();
     this.state = {
+      //set up for user input
       email: "",
       password: "",
       errors: {}
@@ -16,7 +17,7 @@ class Login extends Component {
     this.onChange = this.onChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
   }
-  // Redirect to search
+  // Redirect to search if the user is already logged in
   componentDidMount() {
     if (this.props.auth.isAuthenticated) {
       this.props.history.push("/search");
@@ -29,6 +30,7 @@ class Login extends Component {
     }
 
     if (nextProps.errors) {
+      //error handling
       this.setState({ errors: nextProps.errors });
     }
   }
@@ -46,11 +48,11 @@ class Login extends Component {
       password: this.state.password
     };
 
-    this.props.loginUser(userData);
+    this.props.loginUser(userData); //logs in user using userdata
   }
 
   render() {
-    const { errors } = this.state;
+    const { errors } = this.state; //error handling
 
     return (
       <div className="login">

@@ -20,7 +20,7 @@ import dash2 from "./components/dash2/dash2";
 import CreateProfile from "./components/createsavedart/CreateProfile";
 import EditProfile from "./components/edit-profile/EditProfile";
 import NotFound from "./components/not-found/NotFound";
-//Working route but functionality does not exist
+//Working route but functionality does not exist as it stands
 import ArticleAdd from "./components/saveArticle/ArticleAdd.js";
 
 //Style
