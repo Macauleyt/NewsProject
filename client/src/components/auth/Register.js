@@ -105,7 +105,7 @@ class Register extends Component {
                 <input
                   type="submit"
                   value="Sign Up"
-                  className="btn btn-warning btn-block mt-4"
+                  className="btn btn-mac btn-block mt-4"
                 />
               </form>{" "}
             </div>{" "}

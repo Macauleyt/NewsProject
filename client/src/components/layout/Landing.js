@@ -18,6 +18,7 @@ class Landing extends Component {
             <div className="row">
               <div className="col-md-12 text-center">
                 <h1 className="display-3 mb-4">Newspaper</h1>
+
                 <p className="lead">
                   <span className="oneword">News.</span> All in one place!
                 </p>

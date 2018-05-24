@@ -26,7 +26,7 @@ const Article = props => {
               <a
                 href={details.url}
                 target="_blank"
-                className="btn btn-warning btn-block">
+                className="btn btn-mac btn-block">
                 Link to article
               </a>
             </div>

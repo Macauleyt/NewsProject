@@ -37,7 +37,7 @@ class dash2 extends Component {
               <div style={{ marginBottom: "60px" }} />
               <button
                 onClick={this.onDeleteClick.bind(this)}
-                className="btn btn-warning ">
+                className="btn btn-mac ">
                 Delete My Account
               </button>
             </div>
@@ -52,7 +52,7 @@ class dash2 extends Component {
               You have not yet setup a profile. Click the button below to set
               one up!
             </p>
-            <Link to="/createsavedart" className="btn btn-lg btn-warning">
+            <Link to="/createsavedart" className="btn btn-lg btn-mac">
               Create Profile
             </Link>
           </div>
