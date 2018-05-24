@@ -23,7 +23,7 @@ class Landing extends Component {
                   <span className="oneword">News.</span> All in one place!
                 </p>
                 <hr />
-                <Link to="/register" className="btn btn-lg btn-warning mr-2">
+                <Link to="/register" className="btn btn-lg btn-mac mr-2">
                   Sign Up
                 </Link>
                 <Link to="/login" className="btn btn-lg btn-dark">
