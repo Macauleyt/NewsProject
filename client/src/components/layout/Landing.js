@@ -24,10 +24,10 @@ class Landing extends Component {
                 </p>
                 <hr />
                 <Link to="/register" className="btn btn-lg btn-mac mr-2">
-                  Sign Up
+                  Sign Up!
                 </Link>
                 <Link to="/login" className="btn btn-lg btn-dark">
-                  Login
+                  Login!
                 </Link>
               </div>
             </div>
